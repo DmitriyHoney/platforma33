@@ -13,16 +13,18 @@ const path = {
     src: {
         html: `${source_folder}/*.html`,
         scss: `${source_folder}/scss/style.scss`,
-        js: `${source_folder}/js/main.js`,
+        css: `${source_folder}/css/**/*.css`,
+        js: `${source_folder}/js/**/*.js`,
         img: `${source_folder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
-        fonts: `${source_folder}/fonts/*.ttf`,
+        fonts: `${source_folder}/fonts/**/*.{eot,ttf,svg,woff,woff2}`,
     },
     watch: {
         html: `${source_folder}/**/*.html`,
         scss: `${source_folder}/scss/**/*.scss`,
+        css: `${source_folder}/css/**/*.css`,
         js: `${source_folder}/js/**/*.js`,
         img: `${source_folder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
-        fonts: `${source_folder}/fonts/*.ttf`,
+        fonts: `${source_folder}/fonts/**/*.{eot,ttf,svg,woff,woff2}`,
     },
     clean: `./${project_folder}/`
 }
@@ -53,7 +55,8 @@ function html() {
 }
 function watchFiles() {
     gulp.watch([path.watch.html], html);
-    gulp.watch([path.watch.scss], css);
+    gulp.watch([path.watch.scss], scss_fn);
+    gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.img], images);
     gulp.watch([path.watch.fonts], fonts);
@@ -66,6 +69,11 @@ function clean(params) {
 function js() {
     return src(path.src.js)
         .pipe(dest(path.build.js))
+        .pipe(browsersync.stream())
+}
+function css() {
+    return src(path.src.css)
+        .pipe(dest(path.build.css))
         .pipe(browsersync.stream())
 }
 function fonts() {
@@ -87,7 +95,7 @@ function images() {
         .pipe(browsersync.stream())
 }
 
-function css() {
+function scss_fn() {
     return src(path.src.scss)
     .pipe(
         scss({
@@ -102,13 +110,14 @@ function css() {
     .pipe(browsersync.stream())
 }
 
-let build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts))
+let build = gulp.series(clean, gulp.parallel(html, scss_fn, css, js, images, fonts))
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.css = css;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;
-exports.css = css;
+exports.scss_fn = scss_fn;
 exports.html = html;
 exports.build = build;
 exports.watch = watch;
