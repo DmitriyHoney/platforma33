@@ -1,0 +1,92 @@
+.header {
+    &-nav {
+        &__items {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        &__item {
+            & a {
+                display: flex;
+                align-items: center;
+                padding: 12px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                background: linear-gradient(112deg, rgba(153, 48, 223, 0.10) 0%, rgba(192, 68, 143, 0.10) 40.99%, rgba(241, 92, 59, 0.10) 80.85%), #FFF;
+                color: #23272F;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; /* 125% */
+                &::after {
+                    content: '';
+                    margin-left: 8px;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url('../img/common/chevron-down.svg') no-repeat center top / cover;
+                }
+            }
+        }
+    }
+    &-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: $primary-gradient;
+        width: 60px;
+        height: 60px;
+        margin-right: 24px;
+        & img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &-main {
+        &__top {
+            background-color: #E6E7EC;
+            padding: 24px 0px;
+            & .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &-actions {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                & a {
+                    flex-shrink: 0;
+                }
+            }
+        }
+        &__bottom {
+            background-color: #F4F4F6;
+            padding: 24px 0px;
+            & .school-logo {
+                width: 55%;
+            }
+            & .container {
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+            }
+            &-actions {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-left: auto;
+                & a {
+                    flex-shrink: 0;
+                }
+                & .base-btn.base-btn__white {
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+    &-submain {
+        padding: 14px 0px;
+    }
+}
