@@ -8,6 +8,8 @@
     &-list {
         gap: 16px;
         margin-bottom: 32px;
+        position: relative;
+        z-index: 10;
         & .nav-item {
             & button {
                 padding: 12px 24px;
@@ -38,12 +40,16 @@
         }
     }
     &-content {
-        &__item {
-        }
+        position: relative;
+        z-index: 10;
         &__showmore {
             position: absolute;
             right: 0;
-            top: 20px;
+            top: -65px;
+            background: var(--Primary-Primary-main, linear-gradient(112deg, #9930DF 0%, #C0448F 40.99%, #F15C3B 80.85%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     &-card {
@@ -107,63 +113,28 @@
 
 .events {
     &-slider-arrows {
-        & .slider-arrow {
-            top: 25% !important;
+        top: 20% !important;
+        padding: 0;
+        & .slider-arrow.next-slide {
+            position: relative;
+            right: -20px;
+        }
+        & .slider-arrow.prev-slide {
+            position: relative;
+            right: 20px;
         }
     } 
     &-anons-slider-arrows {
-        & .slider-arrow {
-            top: 38% !important;
+        padding: 0;
+        top: 40% !important;
+        & .slider-arrow.next-slide {
+            position: relative;
+            right: -20px;
         }
-    }
-    & .slider-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 42px;
-        height: 42px;
-        background: #F4F4F6;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        outline: none;
-        border: none;
-        transition: all ease .3s;
-        &:hover {
-            transition: all ease .3s;
-            background: $primary-gradient;
-            & i {
-                color: #fff;
-            }
+        & .slider-arrow.prev-slide {
+            position: relative;
+            right: 20px;
         }
-        &.slick-disabled {
-            background: #F4F4F6;
-            display: none !important;
-            & i {
-                color: $primary;
-            }
-        }
-        & i {
-            font-size: 25px;
-            color: $primary;
-        }
-    }
-    .events-slider-arrows,
-    .events-anons-slider-arrows {
-        position: absolute;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 5;
-        height: 100%;
-        margin: 0px auto;
-    }
-    & .prev-slide {
-        left: -20px;
-    }
-    & .next-slide {
-        right: -20px;
     }
     &-slider {
         margin: 0px -12px;
@@ -194,7 +165,6 @@
         &__title {
             color: #0B1F33;
             font-feature-settings: 'clig' off, 'liga' off;
-            font-family: Lato;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;

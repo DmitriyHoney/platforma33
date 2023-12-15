@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/lato.css">
+    <!-- <link rel="stylesheet" href="css/lato.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,74 +19,214 @@
 <body>
     <header class="header">
         <div class="header-main">
-                <div class="header-main__top">
-                    <div class="container">
-                        <a href="#" class="base-logo">
-                            <img src="./img/common/logo.svg" alt="Логотип сайта">
-                            Навигатор образования Владимирской области
+            <div class="header-main__top">
+                <div class="container">
+                    <a href="#" class="base-logo">
+                        <img src="./img/common/logo.svg" alt="Логотип сайта">
+                        Навигатор образования Владимирской области
+                    </a>
+                    <div class="header-main__top-actions">
+                        <a href="#" class="search-link">
+                            <img src="./img/common/search.svg" alt="Поиск"> 
                         </a>
-                        <div class="header-main__top-actions">
-                            <a href="#" class="search-link">
-                                <img src="./img/common/search.svg" alt="Поиск"> 
-                            </a>
-                            <a href="tel:+74922322541" class="base-link">
-                                <img src="./img/common/phone.svg" alt="Телефон">
-                                8 (4922) 32-25-41
-                            </a>
-                            <a href="#" class="base-btn base-btn__white">
-                                <img src="./img/common/eye-cl.svg" alt="Для слабовидящих">
-                                <span>Для слабовидящих</span>
-                            </a>
-                        </div>
+                        <a href="tel:+74922322541" class="base-link">
+                            <img src="./img/common/phone.svg" alt="Телефон">
+                            8 (4922) 32-25-41
+                        </a>
+                        <a href="#" class="base-btn base-btn__white">
+                            <img src="./img/common/eye-cl.svg" alt="Для слабовидящих">
+                            <span>Для слабовидящих</span>
+                        </a>
                     </div>
                 </div>
-                <div class="header-main__bottom">
-                    <div class="container">
-                        <a href="#" class="header-menu-btn">
-                            <img src="./img/common/menu.svg" alt="menu">
+            </div>
+            <div class="header-main__bottom">
+                <div class="container">
+                    <a href="#" class="header-menu-btn">
+                        <img src="./img/common/menu.svg" alt="menu">
+                    </a>
+                    <a href="#" class="school-logo">
+                        <img src="./img/common/logo.svg" alt="Логотип сайта">
+                        <img src="https://img.freepik.com/free-photo/wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=ais" alt="Логотип сайта">
+                        Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
+                    </a>
+                    <div class="header-main__bottom-actions">
+                        <a href="#">
+                            <img src="./img/common/vk.svg" alt="Вконтакте">
                         </a>
-                        <a href="#" class="school-logo">
-                            <img src="./img/common/logo.svg" alt="Логотип сайта">
-                            <img src="https://img.freepik.com/free-photo/wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=ais" alt="Логотип сайта">
-                            Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
+                        <a href="#">
+                            <img src="./img/common/sferus.svg" alt="Сферум">
                         </a>
-                        <div class="header-main__bottom-actions">
-                            <a href="#">
-                                <img src="./img/common/vk.svg" alt="Вконтакте">
-                            </a>
-                            <a href="#">
-                                <img src="./img/common/sferus.svg" alt="Сферум">
-                            </a>
-                            <a href="#">
-                                <img src="./img/common/okus.svg" alt="Одноклассники">
-                            </a>
-                            <a href="#" class="base-btn base-btn__white">
-                                <span>Войти</span>
-                            </a>
-                        </div>
+                        <a href="#">
+                            <img src="./img/common/okus.svg" alt="Одноклассники">
+                        </a>
+                        <a href="#" class="base-btn base-btn__white">
+                            <span>Войти</span>
+                        </a>
                     </div>
                 </div>
+            </div>
         </div>
-        <div class="header-submain">
+        <div class="header-submain" id="accordion">
             <div class="container">
+                <a href="#" class="header-menu-btn">
+                    <img src="./img/common/menu.svg" alt="menu">
+                </a>
                 <nav class="header-nav">
                     <ul class="reset_ul_ol header-nav__items">
                         <li class="header-nav__item">
-                            <a href="#">Родителям</a>
+                            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse" >
+                                <span>Родителям</span>
+                            </a>
                         </li>
                         <li class="header-nav__item">
-                            <a href="#">Сотрудникам</a>
+                            <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse">
+                                <span>Сотрудникам</span>
+                            </a>
                         </li>
                         <li class="header-nav__item">
-                            <a href="#">Обучающимся</a>
+                            <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse">
+                                <span>Обучающимся</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
+                <div class="header-submain__actions">
+                    <a href="#" class="search-link">
+                        <img src="./img/common/search.svg" alt="Поиск"> 
+                    </a>
+                    <a href="#" class="base-btn base-btn__grad">
+                        <span>Войти</span>
+                    </a>
+                </div>
             </div>
+              <div class="base-collapse collapse" id="collapseExample" data-bs-parent="#accordion">
+                <div class="container">
+                    <ul class="base-collapse__links reset_ul_ol">
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/file-check-02.svg" alt="icon">
+                                <span>Подать заявление в школу</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/flag-05.svg" alt="icon">
+                                <span>Информация об учреждениях</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                                <span>Электронный дневник</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/trophy-01.svg" alt="icon">
+                                <span>Результаты ЕГЭ/ОГЭ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/file-search-02.svg" alt="icon">
+                                <span>Проверка статуса заявления</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="base-collapse__menu-wrap">
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Информация об организациях</a></li>
+                            <li><a href="#">Приём/перевод и отчисление учащихся</a></li>
+                            <li><a href="#">Внимание</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Школьное питание
+                                    <img src="./img/common/chevron-down.svg" alt="icon">
+                                    <img class="dropdown-toggle_icon-act" src="./img/common/chevron-down_grad.svg" alt="icon" style="transform: rotate(180deg);">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a href="#">Школьное питание</a></li>
+                                        <li><a href="#">Меню</a></li>
+                                        <li><a href="#">Организаторы</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">О школе</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Прочие документы</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Платные образовательные услуги</a></li>
+                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                            <li><a href="#">Полезные материалы</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="base-collapse collapse" id="collapseExample2" data-bs-parent="#accordion">
+                <div class="container">
+                    <div class="base-collapse__menu-wrap">
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Аттестация</a></li>
+                            <li><a href="#">Прочие документы</a></li>
+                            <li><a href="#">Правила внутреннего трудового распорядка</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Методические материалы</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="base-collapse collapse" id="collapseExample3" data-bs-parent="#accordion">
+                <div class="container">
+                    <ul class="base-collapse__links reset_ul_ol">
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                                <span>Вход в электронный дневник</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/trophy-01.svg" alt="icon">
+                                <span>Олимпиады и конкурсы</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="base-collapse__menu-wrap">
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Школьная жизнь</a></li>
+                            <li><a href="#">Расписание звонков</a></li>
+                            <li><a href="#">Расписание занятий</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Государственная итоговая аттестация</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Олимпиады и конкурсы</a></li>
+                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Правила внутреннего распорядка обучающихся</a></li>
+                            <li><a href="#">Профориентация</a></li>
+                            <li><a href="#">Полезные материалы</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
         </div>
     </header>
     <section class="offer">
-        <div class="container offer-slider-arrows">
+        <div class="container slider-arrows offer-slider-arrows">
             <button class="prev-slide slider-arrow">
                 <i class="fa fa-angle-left"></i>
             </button>
@@ -300,11 +443,11 @@
                 </ul>
                 <div class="tab-content events-content" id="pills-tabContent">
                     <div class="tab-pane fade show active events-content__item" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="container events-slider-arrows">
-                            <button class="prev-slide slider-arrow">
+                        <div class="container slider-arrows events-slider-arrows">
+                            <button class="prev-slide slider-arrow slider-arrow_grey">
                                 <i class="fa fa-angle-left"></i>
                             </button>
-                            <button class="next-slide slider-arrow">
+                            <button class="next-slide slider-arrow slider-arrow_grey">
                                 <i class="fa fa-angle-right"></i>
                             </button>
                         </div>
@@ -387,11 +530,11 @@
                         </div>
                     </div>
                     <div class="tab-pane fade events-content__item" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                        <div class="container events-anons-slider-arrows">
-                            <button class="prev-slide slider-arrow">
+                        <div class="container slider-arrows events-anons-slider-arrows">
+                            <button class="prev-slide slider-arrow slider-arrow_grey">
                                 <i class="fa fa-angle-left"></i>
                             </button>
-                            <button class="next-slide slider-arrow">
+                            <button class="next-slide slider-arrow slider-arrow_grey">
                                 <i class="fa fa-angle-right"></i>
                             </button>
                         </div>
@@ -514,11 +657,11 @@
                 </div>
             </div>
             <div class="about-slider-wrap">
-                <div class="container about-slider-arrows">
-                    <button class="prev-slide slider-arrow">
+                <div class="container slider-arrows about-slider-arrows">
+                    <button class="prev-slide slider-arrow slider-arrow_grey">
                         <i class="fa fa-angle-left"></i>
                     </button>
-                    <button class="next-slide slider-arrow">
+                    <button class="next-slide slider-arrow slider-arrow_grey">
                         <i class="fa fa-angle-right"></i>
                     </button>
                 </div>
@@ -549,11 +692,11 @@
         </div>
     </section>
     <section class="galery base-section">
-        <div class="container galery-slider-arrows">
-            <button class="prev-slide slider-arrow">
+        <div class="container slider-arrows galery-slider-arrows">
+            <button class="prev-slide slider-arrow slider-arrow_grey">
                 <i class="fa fa-angle-left"></i>
             </button>
-            <button class="next-slide slider-arrow">
+            <button class="next-slide slider-arrow slider-arrow_grey">
                 <i class="fa fa-angle-right"></i>
             </button>
         </div>
@@ -579,14 +722,6 @@
     </section>
     <section class="resource base-section">
         <img src="./img/common/about-line2.svg" alt="about" class="about-line-bg">
-        <div class="container resourse-slider-arrows">
-            <button class="prev-slide slider-arrow">
-                <i class="fa fa-angle-left"></i>
-            </button>
-            <button class="next-slide slider-arrow">
-                <i class="fa fa-angle-right"></i>
-            </button>
-        </div>
         <div class="container">
             <h2 class="base-section__title">Ресурсы и информационные системы в сфере образования</h2>
             <div class="resource-wrap">
@@ -609,6 +744,14 @@
                 </ul>
                 <div class="tab-content events-content" id="pills-tabContent2">
                     <div class="tab-pane fade events-content__item show active" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1" tabindex="0">
+                        <div class="container slider-arrows resourse-slider-arrows">
+                            <button class="prev-slide slider-arrow slider-arrow_grey">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <button class="next-slide slider-arrow slider-arrow_grey">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </div>
                         <div class="resourse-slider">
                             <div class="resourse-slide">
                                 <div class="row">
@@ -658,6 +801,42 @@
                                                         </a>
                                                     </div>
                                                 </div>
+                                                <div class="resourse-subscribe__slide">
+                                                    <div class="resourse-subscribe__slide-image">
+                                                        <img src="./img/common/sferus.jpg" alt="sferus">
+                                                    </div>
+                                                    <div class="resourse-subscribe__slide-info">
+                                                        <h4 class="resourse-subscribe__slide-title">
+                                                            Сферум  
+                                                        </h4>
+                                                        <a href="#" class="services-card__link base-link_grad">
+                                                            Перейти
+                                                            <img src="./img/common/arrow-narrow-right_grad2.svg" alt="Стрелка вправо">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="resourse-subscribe__slide">
+                                                    <div class="resourse-subscribe__slide-image">
+                                                        <img src="./img/common/sferus.jpg" alt="sferus">
+                                                    </div>
+                                                    <div class="resourse-subscribe__slide-info">
+                                                        <h4 class="resourse-subscribe__slide-title">
+                                                            Сферум  
+                                                        </h4>
+                                                        <a href="#" class="services-card__link base-link_grad">
+                                                            Перейти
+                                                            <img src="./img/common/arrow-narrow-right_grad2.svg" alt="Стрелка вправо">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-arrows resourse-subscribe-slider-arrows">
+                                                <button class="prev-slide slider-arrow slider-arrow_whiteicons">
+                                                    <i class="fa fa-angle-left"></i>
+                                                </button>
+                                                <button class="next-slide slider-arrow slider-arrow_whiteicons">
+                                                    <i class="fa fa-angle-right"></i>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -1008,6 +1187,7 @@
     </footer>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>

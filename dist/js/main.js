@@ -24,12 +24,7 @@ $(document).ready(function(){
         slidesToShow: 4,
     });
 
-    $('.events-anons-slider').slick({
-        prevArrow: $('.events-anons-slider-arrows .prev-slide'),
-        nextArrow: $('.events-anons-slider-arrows .next-slide'),
-        infinite: false,
-        slidesToShow: 2,
-    });
+    
 
     $('.about-slider').slick({
         prevArrow: $('.about-slider-arrows .prev-slide'),
@@ -53,6 +48,25 @@ $(document).ready(function(){
         slidesToShow: 1,
     });
 
+    $('.resourse-subscribe__slider').slick({
+        // prevArrow: $('.resourse-subscribe-slider-arrows .prev-slide'),
+        // nextArrow: $('.resourse-subscribe-slider-arrows .next-slide'),
+        infinite: true,
+        arrows: false,
+        dots: true,
+        dotsClass: 'slick-dots slick-dots_white',
+        slidesToShow: 1,
+    });
+
+    $('.resourse-subscribe-slider-arrows .prev-slide').on('click', () => {
+        $('.resourse-subscribe__slider').slick('slickPrev');
+    })
+    $('.resourse-subscribe-slider-arrows .next-slide').on('click', () => {
+        $('.resourse-subscribe__slider').slick('slickNext');
+        // subSlider.slickNext();
+    })
+    
+
     const fixedSliderArrow = (dotsSelector, btnNextSelector, btnPrevSelector) => {
         const $dotsParent = document.querySelectorAll(dotsSelector);
         console.log($dotsParent.length);
@@ -71,4 +85,29 @@ $(document).ready(function(){
 
     fixedSliderArrow('.galery .galery-slider .slick-dots li', '.galery-slider-arrows .next-slide', '.galery-slider-arrows .prev-slide');
     fixedSliderArrow('.resourse .slick-dots li', '.resourse-slider-arrows .next-slide', '.resourse-slider-arrows .prev-slide');
+    $('.events-wrap .nav-item').on('click', () => {
+        $('.events-anons-slider').slick({
+            prevArrow: $('.events-anons-slider-arrows .prev-slide'),
+            nextArrow: $('.events-anons-slider-arrows .next-slide'),
+            infinite: false,
+            slidesToShow: 2,
+        });
+    });
+
+    // Scroll header
+    const fixmeTop = $('.header-submain').offset().top;       // get initial position of the element
+    $(window).scroll(function() {                  // assign scroll event listener
+        const currentScroll = $(window).scrollTop(); // get current position
+        if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+            $('.header-submain').addClass('header-submain__fixed');
+        } else {                                   // apply position: static
+            $('.header-submain').removeClass('header-submain__fixed');
+        }
+    });
+
+    $('.header-nav__item a').on('click', () => {
+        if ($('.header-nav__item a[aria-expanded="true"]').length) $('body').addClass('showCollapseMenu');
+        else $('body').removeClass('showCollapseMenu');
+        
+    })
 });

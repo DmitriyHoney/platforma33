@@ -1,52 +1,6 @@
 .offer {
     background: #ECEFF5;
-    & .slider-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 42px;
-        height: 42px;
-        background: #fff;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        outline: none;
-        border: none;
-        &:hover {
-            transition: all ease .3s;
-            background: $primary-gradient;
-            & i {
-                color: #fff;
-            }
-        }
-        &.slick-disabled {
-            background: #fff;
-            display: none !important;
-            & i {
-                color: $primary;
-            }
-        }
-        & i {
-            font-size: 25px;
-            color: $primary;
-        }
-    }
-    .offer-slider-arrows {
-        position: absolute;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 5;
-        height: 448px;
-        margin: 0px auto;
-    }
-    & .prev-slide {
-        left: 0;
-    }
-    & .next-slide {
-        right: 0;
-    }
+    position: relative;
     & .offer-slide-first-bg {
         position: absolute;
         top: 0;
@@ -70,6 +24,7 @@
         padding-left: 80px;
     }
     &-slider {
+        // z-index: 7;
     }
     &-slide {
         position: relative;
@@ -116,4 +71,9 @@
             overflow: hidden;
         }
     }
+    & .slider-arrow.next-slide {
+        position: relative;
+        left: 15px;
+    }
 }
+
