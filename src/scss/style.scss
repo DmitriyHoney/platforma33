@@ -32,7 +32,12 @@ img {
 .base-section {
     padding: 60px 0px;
     &__title {
-
+        color: #23272F;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 111.111% */
+        margin-bottom: 32px;
     }
 }
 
@@ -77,6 +82,34 @@ img {
     }
 }
 
+.slick-dots {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 50px;
+    position: absolute;
+    left: calc(50% - 17px);
+    transform: translateX(-50%);
+    & li {
+        transition: all ease .3s;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: $primary;
+        cursor: pointer;
+        transition: all ease .3s;
+        &.slick-active {
+            width: 96px;
+            border-radius: 8px;
+        }
+    }
+    & li button {
+        display: none;
+    }
+}
+
 .base-banner {
     background: linear-gradient(112deg, #FF4931 0.01%, #FFF 80.85%);
     border-radius: 24px;
@@ -85,8 +118,13 @@ img {
     flex-direction: column;
     position: relative;
     align-items: flex-start;
+    margin-top: 42px;
     &__student {
         position: absolute;
+        right: 30px;
+        width: auto;
+        height: 95%;
+        bottom: 0;
     }
     &__head {
         display: flex;
@@ -115,8 +153,11 @@ img {
         font-weight: 600;
         line-height: 28px; /* 116.667% */
         width: 40%;
+        margin-bottom: 80px;
     }
 }
+
+
 
 .base-link {
     display: flex;
@@ -128,6 +169,19 @@ img {
     font-style: normal;
     font-weight: 500;
     line-height: 20px; /* 125% */
+    &_primary {
+        color: $primary;
+    }
+    &_grad {
+        background: var(--primary-primary-main, linear-gradient(112deg, #9930DF 0%, #C0448F 40.99%, #F15C3B 80.85%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    & .icon {
+        width: 28px;
+        height: 28px;
+    }
     img {
         width: 24px;
         height: 24px;
@@ -193,6 +247,9 @@ img {
     &__white {
         padding: 12px 24px;
         background-color: #fff;
+        &_gradient {
+            background: var(--primary-primary-secondary, linear-gradient(112deg, rgba(201, 119, 255, 0.10) 0%, rgba(255, 125, 204, 0.10) 40.99%, rgba(255, 138, 112, 0.10) 80.85%), #FFF);
+        }
         & span {
             background: var(--5-active, linear-gradient(112deg, #9930DF 0%, #C0448F 40.99%, #F15C3B 80.85%));
             background-clip: text;
@@ -209,7 +266,17 @@ img {
     &__grey {}
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 @import 'header';
 @import 'offer';
 @import 'services';
 @import 'events';
+@import 'about';
+@import 'galery';
+@import 'resource';
+@import 'usefull';
+@import 'footer';

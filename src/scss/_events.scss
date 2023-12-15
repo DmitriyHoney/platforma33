@@ -3,6 +3,7 @@
     &-wrap {
         margin-top: 32px;
         position: relative;
+        z-index: 2;
     }
     &-list {
         gap: 16px;
@@ -16,7 +17,8 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 20px; /* 125% */
-                background-color: #F4F4F6;
+                background: var(--primary-primary-secondary, linear-gradient(112deg, rgba(201, 119, 255, 0.10) 0%, rgba(255, 125, 204, 0.10) 40.99%, rgba(255, 138, 112, 0.10) 80.85%), #FFF);
+                
                 & span {
                     background: $primary-gradient;
                     background-clip: text;

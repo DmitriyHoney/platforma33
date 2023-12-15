@@ -1,0 +1,23 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 14" clip-path="url(#clip0_275_9170)">
+<g id="Group 8">
+<circle id="Ellipse 1171" cx="14.0004" cy="14" r="12.7826" stroke="url(#paint0_linear_275_9170)" stroke-width="1.5"/>
+<path id="Vector 192" d="M15.2787 17.8348L19.1135 14.0001M19.1135 14.0001L15.2787 10.1653M19.1135 14.0001L8.88744 14.0001" stroke="url(#paint1_linear_275_9170)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_275_9170" x1="1.21777" y1="1.21741" x2="26.1678" y2="11.3806" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9930DF"/>
+<stop offset="0.506953" stop-color="#C0448F"/>
+<stop offset="1" stop-color="#F15C3B"/>
+</linearGradient>
+<linearGradient id="paint1_linear_275_9170" x1="19.1135" y1="17.8348" x2="16.675" y2="9.85287" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9930DF"/>
+<stop offset="0.506953" stop-color="#C0448F"/>
+<stop offset="1" stop-color="#F15C3B"/>
+</linearGradient>
+<clipPath id="clip0_275_9170">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>

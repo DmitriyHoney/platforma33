@@ -1,0 +1,117 @@
+.footer {
+    background: #424242;
+    &-fz {
+        color: #EE2F53;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 60%;
+        padding-left: 30px;
+    }
+    &-title {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 120% */
+        margin-bottom: 32px;
+    }
+    &-info {
+        margin-bottom: 24px;
+        &__title {
+            color: #FFF;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            & li {
+                text-decoration: none;
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                & a {
+                    text-decoration: none;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    &-rule {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &-social {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: auto;
+        & li a {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 12px;
+            & img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px;
+        padding-left: 30px;
+        & .footer-nav-card {
+            width: calc(50% - 24px);
+        }
+        &-card {
+            &__title {
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px; /* 122.222% */
+                margin-bottom: 16px;
+            }
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                & li a {
+                    text-decoration: none;
+                    gap: 8px;
+                    color: #FFF;
+
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 125% */
+                }
+            }
+        }
+    }
+}
+
+.footer-rules-text {
+    margin-top: 42px;
+}
