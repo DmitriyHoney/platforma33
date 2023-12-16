@@ -7,16 +7,221 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
     <!-- <link rel="stylesheet" href="css/lato.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/sm-core-css.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- Боковое меню -->
+    <div id="offcanvas-usage" class="new-leftsidebar" uk-offcanvas="mode: none">
+        <div class="uk-offcanvas-bar">
+            <div class="leftsidebar-wrap">
+                        <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+                <!-- <a href="#" class="header-top__logo base-link leftsidebar-logo">
+                    <img src="./img/common/logo.png" alt="logotype">
+                    <span>Навигатор образования Владимирской области</span>
+                </a> -->
+                <ul id="main-menu" class="sm sm-clean left-sidebar__nav">
+                    <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+                        <ul>
+                        <li>
+                            <a href="#">Основные сведения</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2-2</a>
+                            <ul>
+                                <li><a href="#">Item 3-1</a></li>
+                                <li><a href="#">Item 3-2</a></li>
+                                <li><a href="#">Item 3-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Образовательные стандарты и требования</a></li>
+                        <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                        <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                        <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                        <li><a href="#">Платные образовательные услуги</a></li>
+                        <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                        <li><a href="#">Вакантные места для приема (перевода)</a></li>
+                        <li><a href="#">Доступная среда</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Законодательная карта</a></li>
+                    <li><a href="#">Доступная среда</a></li>
+                    <li><a href="#">О колледже</a></li>
+                    <li><a href="#">Научно-исследовательская деятельность</a></li>
+                    <li><a href="#">Студенческая жизнь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/basic-info.html">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+                        <ul>
+                        <li>
+                            <a href="#">Основные сведения</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2-2</a>
+                            <ul>
+                                <li><a href="#">Item 3-1</a></li>
+                                <li><a href="#">Item 3-2</a></li>
+                                <li><a href="#">Item 3-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Образовательные стандарты и требования</a></li>
+                        <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                        <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                        <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                        <li><a href="#">Платные образовательные услуги</a></li>
+                        <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                        <li><a href="#">Вакантные места для приема (перевода)</a></li>
+                        <li><a href="#">Доступная среда</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="close-offcanvas">
+                    Закрыть
+                    <i class="fa fa-close"></i>
+                </a>
+                <div class="leftsidebar-footer">
+                    <div class="leftsidebar-footer__title">
+                        Контакты
+                    </div>
+                    <ul class="reset_ul_ol">
+                        <li>
+                            <a href="tel:74922322542">
+                                <span>Телефон:</span>
+                                +7 (4922) 32-25-41
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@vamk33.ru">
+                                <span>Почта::</span>
+                                info@vamk33.ru
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                600001, Россия, Владимирская область, г. Владимир, ул. Дворянская, д. 27
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <!-- Detail modal -->
+  <div class="base-modal__wrap modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="container">
+        <div class="base-modal modal-dialog modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="base-modal__title" id="exampleModalLabel">О школе</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="base-modal__intro">
+                  Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
+                </p>
+                <p class="base-modal__text">
+                  Строительство школы по ул. Комсомольская — Лакина было начато в феврале 1989 года. В строительство этого комплекса входило: здание четырехэтажной школы на 1120 мест, пристроенный бассейн, отдельно стоящий тир и теплица. В июле 1992 года объект был введен в эксплуатацию. 1 сентября 1992 года новая школа распахнула двери для девчонок и мальчишек города.
+                  Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
+                  Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография.
+                  Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Map modal -->
+    <div class="base-modal__wrap modal fade" id="mapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="base-modal base-modal__map base-modal_absolute-header modal-dialog modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <h5 class="base-modal__title" id="exampleModalLabel">О школе</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-body__contacts">
+                        <h4 class="modal-body__contacts-title">
+                            Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
+                        </h4>
+                        <div class="modal-body__contacts-card">
+                            <h4>Контакты</h4>
+                            <ul class="reset_ul_ol">
+                                <li>
+                                    <a href="tel:84922545352">8 (492) 254-53-52</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@vamk33.ru">info@vamk33.ru</a>
+                                </li>
+                                <li>
+                                    ул. Офицерская, 12, Владимир, Владимирская обл., 600001
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-body__contacts-card">
+                            <h4>Режим работы</h4>
+                            <ul class="reset_ul_ol">
+                                <li>
+                                    Пн-Вс с 10.00 до 20.00
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="footer-social modal-body__contacts-social reset_ul_ol">
+                            <li>
+                                <a href="#">
+                                    <img src="img/common/vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/common/sferus.svg" alt="sferus">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/common/okus.svg" alt="okus">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29faa61e14e84925aa6fda2154afd11cfffb6b322dcbac33e516e9dd9a29e075&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
     <header class="header">
         <div class="header-main">
             <div class="header-main__top">
@@ -29,10 +234,48 @@
                         <a href="#" class="search-link">
                             <img src="./img/common/search.svg" alt="Поиск"> 
                         </a>
-                        <a href="tel:+74922322541" class="base-link">
+                        <a href="tel:+74922322541" class="base-link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./img/common/phone.svg" alt="Телефон">
                             8 (4922) 32-25-41
                         </a>
+                        <div class="base-dropdown__contacts dropdown">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li class="base-dropdown__wrap">
+                                <div class="base-dropdown-card">
+                                    <h5>График работы:</h5>
+                                    <span>Пн-Вс с 10.00 до 20.00</span>
+                                </div>
+                                <div class="base-dropdown-card">
+                                    <h5>Почта:</h5>
+                                    <a href="mailto:sch30@vladedu.ru">sch30@vladedu.ru</a>
+                                </div>
+                                <div class="base-dropdown-card">
+                                    <h5>Адрес:</h5>
+                                    <span>600901, Россия, Владимирская область, г. Владимир, мкр.  Юрьевец, ул. Школьный проезд, д.1</span>
+                                </div>
+                                <ul class="footer-social base-dropdown-card__social reset_ul_ol">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/common/vk.svg" alt="vk">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/common/sferus.svg" alt="sferus">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/common/okus.svg" alt="okus">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="base-btn base-btn__ghost base-dropdown-card__btn" data-bs-toggle="modal" data-bs-target="#mapModal" tabindex="0">
+                                    <span>Показать на карте</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
                         <a href="#" class="base-btn base-btn__white">
                             <img src="./img/common/eye-cl.svg" alt="Для слабовидящих">
                             <span>Для слабовидящих</span>
@@ -42,7 +285,7 @@
             </div>
             <div class="header-main__bottom">
                 <div class="container">
-                    <a href="#" class="header-menu-btn">
+                    <a href="#" class="header-menu-btn" uk-toggle="target: #offcanvas-usage">
                         <img src="./img/common/menu.svg" alt="menu">
                     </a>
                     <a href="#" class="school-logo">
@@ -100,7 +343,7 @@
                     </a>
                 </div>
             </div>
-              <div class="base-collapse collapse" id="collapseExample" data-bs-parent="#accordion">
+              <div class="base-collapse collapse header-submain__collapse" id="collapseExample" data-bs-parent="#accordion">
                 <div class="container">
                     <ul class="base-collapse__links reset_ul_ol">
                         <li>
@@ -169,7 +412,7 @@
                     </div>
                 </div>
               </div>
-              <div class="base-collapse collapse" id="collapseExample2" data-bs-parent="#accordion">
+              <div class="base-collapse collapse header-submain__collapse" id="collapseExample2" data-bs-parent="#accordion">
                 <div class="container">
                     <div class="base-collapse__menu-wrap">
                         <ul class="base-collapse__nav reset_ul_ol">
@@ -186,7 +429,7 @@
                     </div>
                 </div>
               </div>
-              <div class="base-collapse collapse" id="collapseExample3" data-bs-parent="#accordion">
+              <div class="base-collapse collapse header-submain__collapse" id="collapseExample3" data-bs-parent="#accordion">
                 <div class="container">
                     <ul class="base-collapse__links reset_ul_ol">
                         <li>
@@ -648,7 +891,7 @@
                         Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
                         Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография. Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
                     </div>
-                    <a href="#" class="base-link base-link_primary">Читать полностью...</a>
+                    <a href="#" class="base-link base-link_primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Читать полностью...</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-media">
@@ -1188,8 +1431,10 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/uikit.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.smartmenus.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

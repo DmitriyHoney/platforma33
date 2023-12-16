@@ -110,4 +110,10 @@ $(document).ready(function(){
         else $('body').removeClass('showCollapseMenu');
         
     })
+
+    $(function() {
+        $('#main-menu').smartmenus({
+            collapsibleBehavior:'accordion'
+        });
+    });
 });
