@@ -116,4 +116,9 @@ $(document).ready(function(){
             collapsibleBehavior:'accordion'
         });
     });
+
+    $('.offcanvas').click(function(e) {
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance('#offcanvasExample');
+        e.target.classList.contains('offcanvas') ? bsOffcanvas.hide() : null;
+    })
 });

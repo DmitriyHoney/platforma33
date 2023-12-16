@@ -56,6 +56,53 @@ img {
   margin: 0;
 }
 
+.grad-cl {
+  background: var(--Primary-Primary-main, linear-gradient(112deg, #9930DF 0%, #C0448F 40.99%, #F15C3B 80.85%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.base-helper {
+  width: 233px;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 12px 24px 0px rgba(192, 68, 143, 0.24);
+          box-shadow: 0px 12px 24px 0px rgba(192, 68, 143, 0.24);
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index: 99;
+}
+.base-helper img {
+  width: 88px;
+  height: 88px;
+  margin: 0px auto;
+}
+.base-helper h4 {
+  color: #23272F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  /* 125% */
+  text-align: center;
+}
+.base-helper .base-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .base-section {
   padding: 60px 0px;
 }
@@ -1020,9 +1067,17 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.offcanvas {
+  background-color: unset !important;
+}
+
 .new-leftsidebar {
-  z-index: 9999999;
-  width: 100%;
+  z-index: 9999;
+  width: 100% !important;
+  overflow: auto;
+}
+.new-leftsidebar ul li a {
+  text-decoration: none;
 }
 
 .new-leftsidebar .uk-offcanvas-bar {
@@ -1037,27 +1092,6 @@ img {
   -ms-flex-align: stretch;
   align-items: stretch;
   overflow: visible;
-}
-
-.new-leftsidebar::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 999;
-}
-
-.new-leftsidebar .uk-offcanvas-bar {
-  width: 100%;
-  background-color: transparent;
-  padding-bottom: 120px;
-  z-index: 9999;
-}
-
-.leftsidebar-logo {
-  margin-bottom: 24px;
 }
 
 .leftsidebar-wrap {
@@ -1075,6 +1109,7 @@ img {
   padding-bottom: 120px;
   -webkit-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.12);
+  z-index: 999999;
 }
 
 .uk-offcanvas-bar {
@@ -1426,6 +1461,11 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.header-main-sm,
+.header-sm {
+  display: none;
 }
 
 .offer {
