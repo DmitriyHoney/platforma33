@@ -1,7 +1,7 @@
 .resource {
     background: $light-gradient;
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 120px !important;
     &-line-bg {
         position: absolute;
         top: 0;
@@ -77,6 +77,7 @@
         display: flex !important;
         gap: 24px;
         border-radius: 16px;
+        margin: 0px 5px;
         &-title {
             color: var(--dark-l-393-f-4-c, #393F4C);
             font-size: 16px;
@@ -142,6 +143,7 @@
         height: 212px;
         margin-bottom: 12px;
         flex-shrink: 0;
+        margin-left: auto;
         & img {
             border-radius: 8px;
             object-fit: cover;

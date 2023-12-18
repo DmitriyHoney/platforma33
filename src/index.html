@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <!-- <link rel="stylesheet" href="css/lato.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -19,156 +17,122 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Боковое меню -->
-    <div id="offcanvas-usage" class="new-leftsidebar" uk-offcanvas="mode: none">
-        <div class="uk-offcanvas-bar">
-            <div class="leftsidebar-wrap">
-                        <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
-                <!-- <a href="#" class="header-top__logo base-link leftsidebar-logo">
-                    <img src="./img/common/logo.png" alt="logotype">
-                    <span>Навигатор образования Владимирской области</span>
-                </a> -->
-                <ul id="main-menu" class="sm sm-clean left-sidebar__nav">
-                    <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+    <!-- Leftsidebar -->
+    <div class="offcanvas offcanvas-start new-leftsidebar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="leftsidebar-wrap">
+                    <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+            <!-- <a href="#" class="header-top__logo base-link leftsidebar-logo">
+                <img src="./img/common/logo.png" alt="logotype">
+                <span>Навигатор образования Владимирской области</span>
+            </a> -->
+            <ul id="main-menu" class="sm sm-clean left-sidebar__nav">
+                <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+                    <ul>
+                    <li>
+                        <a href="#">Основные сведения</a>
+                    </li>
+                    <li>
+                        <a href="#">Item 2-2</a>
                         <ul>
-                        <li>
-                            <a href="#">Основные сведения</a>
-                        </li>
-                        <li>
-                            <a href="#">Item 2-2</a>
-                            <ul>
-                                <li><a href="#">Item 3-1</a></li>
-                                <li><a href="#">Item 3-2</a></li>
-                                <li><a href="#">Item 3-3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
-                        <li><a href="#">Документы</a></li>
-                        <li><a href="#">Образование</a></li>
-                        <li><a href="#">Образовательные стандарты и требования</a></li>
-                        <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
-                        <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
-                        <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
-                        <li><a href="#">Платные образовательные услуги</a></li>
-                        <li><a href="#">Финансово-хозяйственная деятельность</a></li>
-                        <li><a href="#">Вакантные места для приема (перевода)</a></li>
-                        <li><a href="#">Доступная среда</a></li>
+                            <li><a href="#">Item 3-1</a></li>
+                            <li><a href="#">Item 3-2</a></li>
+                            <li><a href="#">Item 3-3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Законодательная карта</a></li>
+                    <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">Образовательные стандарты и требования</a></li>
+                    <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                    <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                    <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                    <li><a href="#">Платные образовательные услуги</a></li>
+                    <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                    <li><a href="#">Вакантные места для приема (перевода)</a></li>
                     <li><a href="#">Доступная среда</a></li>
-                    <li><a href="#">О колледже</a></li>
-                    <li><a href="#">Научно-исследовательская деятельность</a></li>
-                    <li><a href="#">Студенческая жизнь</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="/basic-info.html">Контакты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
-                        <ul>
-                        <li>
-                            <a href="#">Основные сведения</a>
-                        </li>
-                        <li>
-                            <a href="#">Item 2-2</a>
-                            <ul>
-                                <li><a href="#">Item 3-1</a></li>
-                                <li><a href="#">Item 3-2</a></li>
-                                <li><a href="#">Item 3-3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
-                        <li><a href="#">Документы</a></li>
-                        <li><a href="#">Образование</a></li>
-                        <li><a href="#">Образовательные стандарты и требования</a></li>
-                        <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
-                        <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
-                        <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
-                        <li><a href="#">Платные образовательные услуги</a></li>
-                        <li><a href="#">Финансово-хозяйственная деятельность</a></li>
-                        <li><a href="#">Вакантные места для приема (перевода)</a></li>
-                        <li><a href="#">Доступная среда</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <a href="#" class="close-offcanvas">
-                    Закрыть
-                    <i class="fa fa-close"></i>
-                </a>
-                <div class="leftsidebar-footer">
-                    <div class="leftsidebar-footer__title">
-                        Контакты
-                    </div>
-                    <ul class="reset_ul_ol">
-                        <li>
-                            <a href="tel:74922322542">
-                                <span>Телефон:</span>
-                                +7 (4922) 32-25-41
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@vamk33.ru">
-                                <span>Почта::</span>
-                                info@vamk33.ru
-                            </a>
-                        </li>
-                        <li>
-                            <span>
-                                600001, Россия, Владимирская область, г. Владимир, ул. Дворянская, д. 27
-                            </span>
-                        </li>
                     </ul>
+                </li>
+                <li><a href="#">Законодательная карта</a></li>
+                <li><a href="#">Доступная среда</a></li>
+                <li><a href="#">О колледже</a></li>
+                <li><a href="#">Научно-исследовательская деятельность</a></li>
+                <li><a href="#">Студенческая жизнь</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="/basic-info.html">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="close-offcanvas">
+                Закрыть
+                <i class="fa fa-close"></i>
+            </a>
+            <div class="leftsidebar-footer">
+                <div class="leftsidebar-footer__title">
+                    Контакты
                 </div>
+                <ul class="reset_ul_ol">
+                    <li>
+                        <a href="tel:74922322542">
+                            <span class="grad-cl">Телефон:</span>
+                            +7 (4922) 32-25-41
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@vamk33.ru">
+                            <span class="grad-cl">Почта:</span>
+                            info@vamk33.ru
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="grad-cl">Адрес:</span>
+                            600001, Россия, Владимирская область, г. Владимир, ул. Дворянская, д. 27
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
   
-  <!-- Detail modal -->
-  <div class="base-modal__wrap modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- About school - detail modal -->
+    <div class="base-modal__wrap modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="container">
         <div class="base-modal modal-dialog modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
+                <div class="modal-header">
                 <h5 class="base-modal__title" id="exampleModalLabel">О школе</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
+                </div>
+                <div class="modal-body">
                 <p class="base-modal__intro">
-                  Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
+                    Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
                 </p>
                 <p class="base-modal__text">
-                  Строительство школы по ул. Комсомольская — Лакина было начато в феврале 1989 года. В строительство этого комплекса входило: здание четырехэтажной школы на 1120 мест, пристроенный бассейн, отдельно стоящий тир и теплица. В июле 1992 года объект был введен в эксплуатацию. 1 сентября 1992 года новая школа распахнула двери для девчонок и мальчишек города.
-                  Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
-                  Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография.
-                  Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
+                    Строительство школы по ул. Комсомольская — Лакина было начато в феврале 1989 года. В строительство этого комплекса входило: здание четырехэтажной школы на 1120 мест, пристроенный бассейн, отдельно стоящий тир и теплица. В июле 1992 года объект был введен в эксплуатацию. 1 сентября 1992 года новая школа распахнула двери для девчонок и мальчишек города.
+                    Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
+                    Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография.
+                    Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
                 </p>
-              </div>
+                </div>
             </div>
         </div>
     </div>
-  </div>
+    </div>
 
     <!-- Map modal -->
     <div class="base-modal__wrap modal fade" id="mapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="container">
             <div class="base-modal base-modal__map base-modal_absolute-header modal-dialog modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
+                <div class="modal-header">
                     <!-- <h5 class="base-modal__title" id="exampleModalLabel">О школе</h5> -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
+                </div>
+                <div class="modal-body">
                     <div class="modal-body__contacts">
                         <h4 class="modal-body__contacts-title">
                             Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
@@ -216,11 +180,19 @@
                     <div class="modal-body__map">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29faa61e14e84925aa6fda2154afd11cfffb6b322dcbac33e516e9dd9a29e075&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                     </div>
-                  </div>
+                </div>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
+
+    <div class="base-helper">
+        <img src="./img/common/message-chat-circle.svg" alt="icon">
+        <h4>Онлайн-приёмная</h4>
+        <a href="#" class="base-btn base-btn__ghost">
+            <span>Задать вопрос</span>
+        </a>
+    </div>
 
     <header class="header">
         <div class="header-main">
@@ -276,6 +248,10 @@
                               </li>
                             </ul>
                         </div>
+                        <a href="#" class="school-logo school-logo_sm">
+                            <img src="https://img.freepik.com/free-photo/wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=ais" alt="Логотип сайта">
+                            <span>Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"</span>
+                        </a>
                         <a href="#" class="base-btn base-btn__white">
                             <img src="./img/common/eye-cl.svg" alt="Для слабовидящих">
                             <span>Для слабовидящих</span>
@@ -285,13 +261,16 @@
             </div>
             <div class="header-main__bottom">
                 <div class="container">
-                    <a href="#" class="header-menu-btn" uk-toggle="target: #offcanvas-usage">
+                    <a class="header-menu-btn" data-bs-toggle="offcanvas" href="#offcanvasExample">
                         <img src="./img/common/menu.svg" alt="menu">
                     </a>
                     <a href="#" class="school-logo">
                         <img src="./img/common/logo.svg" alt="Логотип сайта">
                         <img src="https://img.freepik.com/free-photo/wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=ais" alt="Логотип сайта">
-                        Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
+                        <span>Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"</span>
+                    </a>
+                    <a class="header-menu-btn header-menu-btn_sm" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                        <img src="./img/common/menu.svg" alt="menu">
                     </a>
                     <div class="header-main__bottom-actions">
                         <a href="#">
@@ -303,16 +282,62 @@
                         <a href="#">
                             <img src="./img/common/okus.svg" alt="Одноклассники">
                         </a>
+                        
                         <a href="#" class="base-btn base-btn__white">
                             <span>Войти</span>
                         </a>
+                    </div>
+                    <a href="#" class="search-link header-main-sm">
+                        <img src="./img/common/search.svg" alt="Поиск"> 
+                    </a>
+                    <a href="tel:+74922322541" class="base-link header-main-sm" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/common/phone.svg" alt="Телефон">
+                        8 (4922) 32-25-41
+                    </a>
+                    <div class="base-dropdown__contacts dropdown">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li class="base-dropdown__wrap">
+                            <div class="base-dropdown-card">
+                                <h5>График работы:</h5>
+                                <span>Пн-Вс с 10.00 до 20.00</span>
+                            </div>
+                            <div class="base-dropdown-card">
+                                <h5>Почта:</h5>
+                                <a href="mailto:sch30@vladedu.ru">sch30@vladedu.ru</a>
+                            </div>
+                            <div class="base-dropdown-card">
+                                <h5>Адрес:</h5>
+                                <span>600901, Россия, Владимирская область, г. Владимир, мкр.  Юрьевец, ул. Школьный проезд, д.1</span>
+                            </div>
+                            <ul class="footer-social base-dropdown-card__social reset_ul_ol">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/common/vk.svg" alt="vk">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/common/sferus.svg" alt="sferus">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/common/okus.svg" alt="okus">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="base-btn base-btn__ghost base-dropdown-card__btn" data-bs-toggle="modal" data-bs-target="#mapModal" tabindex="0">
+                                <span>Показать на карте</span>
+                            </a>
+                          </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="header-submain" id="accordion">
             <div class="container">
-                <a href="#" class="header-menu-btn">
+                <a class="header-menu-btn" data-bs-toggle="offcanvas" href="#offcanvasExample">
                     <img src="./img/common/menu.svg" alt="menu">
                 </a>
                 <nav class="header-nav">
@@ -343,7 +368,264 @@
                     </a>
                 </div>
             </div>
-              <div class="base-collapse collapse header-submain__collapse" id="collapseExample" data-bs-parent="#accordion">
+            <div class="base-collapse collapse header-submain__collapse" id="collapseExample" data-bs-parent="#accordion">
+            <div class="container">
+                <ul class="base-collapse__links reset_ul_ol">
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/file-check-02.svg" alt="icon">
+                            <span>Подать заявление в школу</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/flag-05.svg" alt="icon">
+                            <span>Информация об учреждениях</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                            <span>Электронный дневник</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/trophy-01.svg" alt="icon">
+                            <span>Результаты ЕГЭ/ОГЭ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/file-search-02.svg" alt="icon">
+                            <span>Проверка статуса заявления</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="base-collapse__menu-wrap">
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="#">Информация об организациях</a></li>
+                        <li><a href="#">Приём/перевод и отчисление учащихся</a></li>
+                        <li><a href="#">Внимание</a></li>
+                        <li><a href="#">Полезная информация</a></li>
+                    </ul>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                    Школьное питание
+                                <img src="./img/common/chevron-down.svg" alt="icon">
+                                <img class="dropdown-toggle_icon-act" src="./img/common/chevron-down_grad.svg" alt="icon" style="transform: rotate(180deg);">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a href="#">Школьное питание</a></li>
+                                    <li><a href="#">Меню</a></li>
+                                    <li><a href="#">Организаторы</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">О школе</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Прочие документы</a></li>
+                    </ul>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Платные образовательные услуги</a></li>
+                        <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                        <li><a href="#">Полезные материалы</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="base-collapse collapse header-submain__collapse" id="collapseExample2" data-bs-parent="#accordion">
+            <div class="container">
+                <div class="base-collapse__menu-wrap">
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="#">Аттестация</a></li>
+                        <li><a href="#">Прочие документы</a></li>
+                        <li><a href="#">Правила внутреннего трудового распорядка</a></li>
+                    </ul>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Методические материалы</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="base-collapse collapse header-submain__collapse" id="collapseExample3" data-bs-parent="#accordion">
+            <div class="container">
+                <ul class="base-collapse__links reset_ul_ol">
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                            <span>Вход в электронный дневник</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/trophy-01.svg" alt="icon">
+                            <span>Олимпиады и конкурсы</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="base-collapse__menu-wrap">
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="#">Школьная жизнь</a></li>
+                        <li><a href="#">Расписание звонков</a></li>
+                        <li><a href="#">Расписание занятий</a></li>
+                    </ul>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Государственная итоговая аттестация</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Олимпиады и конкурсы</a></li>
+                        <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                    </ul>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Правила внутреннего распорядка обучающихся</a></li>
+                        <li><a href="#">Профориентация</a></li>
+                        <li><a href="#">Полезные материалы</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <section class="offer">
+        <div class="container slider-arrows offer-slider-arrows">
+            <button class="prev-slide slider-arrow">
+                <i class="fa fa-angle-left"></i>
+            </button>
+            <button class="next-slide slider-arrow">
+                <i class="fa fa-angle-right"></i>
+            </button>
+        </div>
+            <div class="offer-slider">
+                <div class="offer-slide">
+                    <div class="container">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-xl-6">
+                                <div class="offer-info">
+                                    <div class="offer-stick">Наклейка над заголовком</div>
+                                    <h1 class="offer-title">
+                                        Заголовок баннера может быть максимум в две строки!
+                                    </h1>
+                                    <p class="offer-text offer-text__two-lines">
+                                        Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки!
+                                    </p>
+                                    <a href="#" class="base-btn base-btn__ghost">
+                                        <span>Кнопка баннера</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <img src="./img/offer/slide1.png" alt="slide1" class="offer-slide-first-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-slide">
+                    <div class="container">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-xl-6">
+                                <div class="offer-info">
+                                    <div class="offer-stick">Наклейка над заголовком</div>
+                                    <h1 class="offer-title">
+                                        Заголовок баннера может быть максимум в две строки!
+                                    </h1>
+                                    <p class="offer-text offer-text__two-lines">
+                                        Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки!
+                                    </p>
+                                    <a href="#" class="base-btn base-btn__ghost">
+                                        <span>Кнопка баннера</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <img src="./img/offer/slide2.png" alt="slide2" class="offer-slide-base-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-slide">
+                    <div class="container">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-xl-6">
+                                <div class="offer-info">
+                                    <div class="offer-stick">Приветственное слово директора</div>
+                                    <h1 class="offer-title">
+                                        Киллиманджарова Людмила Юрьевна
+                                    </h1>
+                                    <p class="offer-text offer-text__range-words">
+                                        Мы рады приветствовать вас на официальном сайте нашей образовательной организации. Сайт адресован всем, кому интересно знать, чем живет наше образовательное учреждение, в чем заключается его специфика. Он создается для Вас, уважаемые Родители, любимые Ученики, Учителя и просто Гости сайта.
+                                        ГКОУ ВО "Специальная (коррекционная) общеобразовательная школа - интернат №3 г. Владимира" - образовательное учреждение, в котором обучаются и проживают в режиме пятидневной недели дети с ограниченными возможностями здоровья, в том числе из семей, нуждающихся в поддержке государства.
+                                        Наш педагогический коллектив стремится дать обучающимся всестороннее качественное образование, сделать школу комфортной для всех участников образовательного процесса.
+                                        Наша школа-интернат - это большой, надёжный, тёплый дом, где есть работа и отдых, праздники и будни, и, самое главное, добрые традиции. Сотрудничество педагогов, обучающихся и их родителей, основанное на взаимоуважении и взаимопомощи, является залогом успеха в социализации воспитанников, в подготовке их к будущей самостоятельной жизни.
+                                        Искренне надеемся, что сайт станет для вас источником актуальной и нужной информации, ориентиром в многогранной и разнообразной жизни образовательного учреждения.
+                                    </p>
+                                    <a href="#" class="base-btn base-btn__ghost">
+                                        <span>Читать полностью</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <img src="./img/offer/slide2.png" alt="slide2" class="offer-slide-base-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-slide">
+                    <div class="container">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-xl-6">
+                                <div class="offer-info">
+                                    <h1 class="offer-title">О школе</h1>
+                                    <p class="offer-text offer-text__range-words2">
+                                        Строительство школы по ул. Комсомольская — Лакина было начато в феврале 1989 года. В строительство этого комплекса входило: здание четырехэтажной школы на 1120 мест, пристроенный бассейн, отдельно стоящий тир и теплица. В июле 1992 года объект был введен в эксплуатацию. 1 сентября 1992 года новая школа распахнула двери для девчонок и мальчишек города.
+
+                                        Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
+
+                                        Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография.
+
+                                        Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
+                                    </p>
+                                    <a href="#" class="base-btn base-btn__ghost">
+                                        <span>Читать полностью</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <img src="./img/offer/slide2.png" alt="slide2" class="offer-slide-base-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="header-sm">
+        <div class="container">
+            <nav class="header-nav">
+                <ul class="reset_ul_ol header-nav__items">
+                    <li class="header-nav__item">
+                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse" >
+                            <span>Родителям</span>
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse">
+                            <span>Сотрудникам</span>
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse">
+                            <span>Обучающимся</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="base-collapse collapse header-submain__collapse" id="collapseExample" data-bs-parent="#accordion">
                 <div class="container">
                     <ul class="base-collapse__links reset_ul_ol">
                         <li>
@@ -411,8 +693,8 @@
                         </ul>
                     </div>
                 </div>
-              </div>
-              <div class="base-collapse collapse header-submain__collapse" id="collapseExample2" data-bs-parent="#accordion">
+                </div>
+                <div class="base-collapse collapse header-submain__collapse" id="collapseExample2" data-bs-parent="#accordion">
                 <div class="container">
                     <div class="base-collapse__menu-wrap">
                         <ul class="base-collapse__nav reset_ul_ol">
@@ -428,8 +710,8 @@
                         </ul>
                     </div>
                 </div>
-              </div>
-              <div class="base-collapse collapse header-submain__collapse" id="collapseExample3" data-bs-parent="#accordion">
+                </div>
+                <div class="base-collapse collapse header-submain__collapse" id="collapseExample3" data-bs-parent="#accordion">
                 <div class="container">
                     <ul class="base-collapse__links reset_ul_ol">
                         <li>
@@ -465,124 +747,13 @@
                         </ul>
                     </div>
                 </div>
-              </div>
+                </div>
         </div>
-    </header>
-    <section class="offer">
-        <div class="container slider-arrows offer-slider-arrows">
-            <button class="prev-slide slider-arrow">
-                <i class="fa fa-angle-left"></i>
-            </button>
-            <button class="next-slide slider-arrow">
-                <i class="fa fa-angle-right"></i>
-            </button>
-        </div>
-            <div class="offer-slider">
-                <div class="offer-slide">
-                    <div class="container">
-                        <div class="row gx-5 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="offer-info">
-                                    <div class="offer-stick">Наклейка над заголовком</div>
-                                    <h1 class="offer-title">
-                                        Заголовок баннера может быть максимум в две строки!
-                                    </h1>
-                                    <p class="offer-text offer-text__two-lines">
-                                        Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки!
-                                    </p>
-                                    <a href="#" class="base-btn base-btn__ghost">
-                                        <span>Кнопка баннера</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col lg-6">
-                                <img src="./img/offer/slide1.png" alt="slide1" class="offer-slide-first-bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="offer-slide">
-                    <div class="container">
-                        <div class="row gx-5 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="offer-info">
-                                    <div class="offer-stick">Наклейка над заголовком</div>
-                                    <h1 class="offer-title">
-                                        Заголовок баннера может быть максимум в две строки!
-                                    </h1>
-                                    <p class="offer-text offer-text__two-lines">
-                                        Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки! Описание баннера может быть максимум в две строки!
-                                    </p>
-                                    <a href="#" class="base-btn base-btn__ghost">
-                                        <span>Кнопка баннера</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col lg-6">
-                                <img src="./img/offer/slide2.png" alt="slide2" class="offer-slide-base-bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="offer-slide">
-                    <div class="container">
-                        <div class="row gx-5 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="offer-info">
-                                    <div class="offer-stick">Приветственное слово директора</div>
-                                    <h1 class="offer-title">
-                                        Киллиманджарова Людмила Юрьевна
-                                    </h1>
-                                    <p class="offer-text offer-text__range-words">
-                                        Мы рады приветствовать вас на официальном сайте нашей образовательной организации. Сайт адресован всем, кому интересно знать, чем живет наше образовательное учреждение, в чем заключается его специфика. Он создается для Вас, уважаемые Родители, любимые Ученики, Учителя и просто Гости сайта.
-                                        ГКОУ ВО "Специальная (коррекционная) общеобразовательная школа - интернат №3 г. Владимира" - образовательное учреждение, в котором обучаются и проживают в режиме пятидневной недели дети с ограниченными возможностями здоровья, в том числе из семей, нуждающихся в поддержке государства.
-                                        Наш педагогический коллектив стремится дать обучающимся всестороннее качественное образование, сделать школу комфортной для всех участников образовательного процесса.
-                                        Наша школа-интернат - это большой, надёжный, тёплый дом, где есть работа и отдых, праздники и будни, и, самое главное, добрые традиции. Сотрудничество педагогов, обучающихся и их родителей, основанное на взаимоуважении и взаимопомощи, является залогом успеха в социализации воспитанников, в подготовке их к будущей самостоятельной жизни.
-                                        Искренне надеемся, что сайт станет для вас источником актуальной и нужной информации, ориентиром в многогранной и разнообразной жизни образовательного учреждения.
-                                    </p>
-                                    <a href="#" class="base-btn base-btn__ghost">
-                                        <span>Читать полностью</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col lg-6">
-                                <img src="./img/offer/slide2.png" alt="slide2" class="offer-slide-base-bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="offer-slide">
-                    <div class="container">
-                        <div class="row gx-5 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="offer-info">
-                                    <h1 class="offer-title">О школе</h1>
-                                    <p class="offer-text offer-text__range-words2">
-                                        Строительство школы по ул. Комсомольская — Лакина было начато в феврале 1989 года. В строительство этого комплекса входило: здание четырехэтажной школы на 1120 мест, пристроенный бассейн, отдельно стоящий тир и теплица. В июле 1992 года объект был введен в эксплуатацию. 1 сентября 1992 года новая школа распахнула двери для девчонок и мальчишек города.
-
-                                        Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
-
-                                        Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография.
-
-                                        Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
-                                    </p>
-                                    <a href="#" class="base-btn base-btn__ghost">
-                                        <span>Читать полностью</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col lg-6">
-                                <img src="./img/offer/slide2.png" alt="slide2" class="offer-slide-base-bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+    </div>
     <section class="services base-section">
         <div class="container">
             <div class="row gy-4">
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="services-card">
                         <div class="services-card__head">
                             <div class="services-card__icon">
@@ -596,7 +767,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="services-card">
                         <div class="services-card__head">
                             <div class="services-card__icon">
@@ -610,7 +781,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="services-card">
                         <div class="services-card__head">
                             <div class="services-card__icon">
@@ -624,7 +795,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="services-card">
                         <div class="services-card__head">
                             <div class="services-card__icon">
@@ -638,7 +809,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="services-card">
                         <div class="services-card__head">
                             <div class="services-card__icon">
@@ -652,7 +823,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="services-card">
                         <div class="services-card__head">
                             <div class="services-card__icon">
@@ -881,8 +1052,8 @@
             <h2 class="base-section__title">
                 О школе
             </h2>
-            <div class="row gx-5">
-                <div class="col-lg-6">
+            <div class="row gx-4">
+                <div class="col-xl-6 col-lg-12">
                     <p class="about-subtitle">
                         Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
                     </p>
@@ -893,7 +1064,7 @@
                     </div>
                     <a href="#" class="base-link base-link_primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Читать полностью...</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <div class="about-media">
                         <img src="./img/about/Rectangle 737.jpg" alt="image">
                     </div>
@@ -997,8 +1168,8 @@
                         </div>
                         <div class="resourse-slider">
                             <div class="resourse-slide">
-                                <div class="row">
-                                    <div class="col-lg-6">
+                                <div class="row gy-4">
+                                    <di class="col-xl-6">
                                         <div class="resourse-subscribe">
                                             <img src="./img/common/phone.png" alt="phone" class="resourse-subscribe__bg">
                                             <h3 class="resourse-subscribe__title">
@@ -1082,8 +1253,8 @@
                                                 </button>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
+                                    </di gy-4v>
+                                    <div class="col-xl-6">
                                         <div class="resourse-links">
                                             <div class="resourse-link">
                                                 <div class="resourse-link__content">
@@ -1122,8 +1293,8 @@
                                 </div>
                             </div>
                             <div class="resourse-slide">
-                                <div class="row">
-                                    <div class="col-lg-6">
+                                <div class="row gy-4">
+                                    <di class="col-xl-6">
                                         <div class="resourse-links">
                                             <div class="resourse-link">
                                                 <div class="resourse-link__content">
@@ -1158,8 +1329,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
+                                    </di gy-4v>
+                                    <div class="col-xl-6">
                                         <div class="resourse-links">
                                             <div class="resourse-link">
                                                 <div class="resourse-link__content">
@@ -1215,7 +1386,7 @@
                 Полезная информация
             </h2>
             <div class="row gy-3">
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1224,7 +1395,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1233,7 +1404,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1242,7 +1413,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1251,7 +1422,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1260,7 +1431,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1269,7 +1440,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1278,7 +1449,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1287,7 +1458,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1296,7 +1467,7 @@
                         <img src="./img/common/arrow-narrow-right.svg" alt="arrow" class="useful-card__arrrow">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <a href="#" class="useful-card">
                         <div class="useful-card__image">
                             <img src="./img/common/arrow.svg" alt="arrow">
@@ -1310,8 +1481,8 @@
     </section>
     <footer class="footer base-section">
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 flex-column">
+            <div class="row gx-4">
+                <div class="col-xl-6 col-lg-12 flex-column">
                     <h2 class="footer-title">
                         Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
                     </h2>
@@ -1360,7 +1531,7 @@
                     </ul>
                     
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <div class="footer-nav">
                         <div class="footer-nav-card">
                             <h3 class="footer-nav-card__title">
@@ -1431,7 +1602,6 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/uikit.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="js/jquery.smartmenus.min.js"></script>

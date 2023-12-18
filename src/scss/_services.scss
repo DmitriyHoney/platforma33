@@ -15,6 +15,7 @@
         &__icon {
            width: 42px;
            height: 42px; 
+           flex-shrink: 0;
         }
         &__title {
             color: #0B1F33;

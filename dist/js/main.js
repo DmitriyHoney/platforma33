@@ -15,6 +15,15 @@ $(document).ready(function(){
         prevArrow: $('.offer-slider-arrows .prev-slide'),
         nextArrow: $('.offer-slider-arrows .next-slide'),
         infinite: false,
+        responsive: [
+            {
+              breakpoint: 719,
+              settings: {
+                slidesToShow: 1,
+                adaptiveHeight: true,
+              }
+            },
+        ]
     });
 
     $('.events-slider').slick({
@@ -22,6 +31,26 @@ $(document).ready(function(){
         nextArrow: $('.events-slider-arrows .next-slide'),
         infinite: false,
         slidesToShow: 4,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                }
+            },
+        ]
     });
 
     
@@ -31,7 +60,23 @@ $(document).ready(function(){
         nextArrow: $('.about-slider-arrows .next-slide'),
         infinite: true,
         slidesToShow: 3,
-        variableWidth: true
+        variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+                breakpoint: 729,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                }
+            },
+        ]
+        
     });
     $('.galery-slider').slick({
         prevArrow: $('.galery-slider-arrows .prev-slide'),
@@ -39,6 +84,26 @@ $(document).ready(function(){
         infinite: true,
         dots: true,
         slidesToShow: 4,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
     $('.resourse-slider').slick({
         prevArrow: $('.resourse-slider-arrows .prev-slide'),
@@ -46,6 +111,7 @@ $(document).ready(function(){
         infinite: true,
         dots: true,
         slidesToShow: 1,
+        adaptiveHeight: true,
     });
 
     $('.resourse-subscribe__slider').slick({
@@ -56,6 +122,21 @@ $(document).ready(function(){
         dots: true,
         dotsClass: 'slick-dots slick-dots_white',
         slidesToShow: 1,
+        
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
     $('.resourse-subscribe-slider-arrows .prev-slide').on('click', () => {
@@ -69,7 +150,7 @@ $(document).ready(function(){
 
     const fixedSliderArrow = (dotsSelector, btnNextSelector, btnPrevSelector) => {
         const $dotsParent = document.querySelectorAll(dotsSelector);
-        console.log($dotsParent.length);
+        if (!$dotsParent.length) return;
         const initPadding = 140;
         const baseCountSliders = 4;
         let result = initPadding;
@@ -84,13 +165,21 @@ $(document).ready(function(){
     }
 
     fixedSliderArrow('.galery .galery-slider .slick-dots li', '.galery-slider-arrows .next-slide', '.galery-slider-arrows .prev-slide');
-    fixedSliderArrow('.resourse .slick-dots li', '.resourse-slider-arrows .next-slide', '.resourse-slider-arrows .prev-slide');
+    fixedSliderArrow('.resourse-slider .slick-dots li', '.resourse-slider-arrows .next-slide', '.resourse-slider-arrows .prev-slide');
     $('.events-wrap .nav-item').on('click', () => {
         $('.events-anons-slider').slick({
             prevArrow: $('.events-anons-slider-arrows .prev-slide'),
             nextArrow: $('.events-anons-slider-arrows .next-slide'),
             infinite: false,
             slidesToShow: 2,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 1,
+                    }
+                },
+            ]
         });
     });
 
@@ -120,5 +209,9 @@ $(document).ready(function(){
     $('.offcanvas').click(function(e) {
         const bsOffcanvas = bootstrap.Offcanvas.getInstance('#offcanvasExample');
         e.target.classList.contains('offcanvas') ? bsOffcanvas.hide() : null;
+    })
+    $('.close-offcanvas').click(function(e) {
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance('#offcanvasExample');
+        bsOffcanvas.hide();
     })
 });

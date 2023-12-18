@@ -25,7 +25,9 @@
 .galery-slider {
     &-arrows {
         padding: 0;
-        bottom: -70px;
+        bottom: 65px !important;
+        top: auto;
+        height: 42px;
         & .slider-arrow.next-slide {
             position: absolute;
             left: 50%;

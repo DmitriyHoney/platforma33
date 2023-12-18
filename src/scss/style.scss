@@ -53,6 +53,44 @@ img {
     margin: 0;
 }
 
+.grad-cl {
+    background: var(--Primary-Primary-main, linear-gradient(112deg, #9930DF 0%, #C0448F 40.99%, #F15C3B 80.85%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.base-helper {
+    width: 233px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 12px 24px 0px rgba(192, 68, 143, 0.24);
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 99;
+    & img {
+        width: 88px;
+        height: 88px;
+        margin: 0px auto;
+    }
+    & h4 {
+        color: #23272F;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 125% */
+        text-align: center;
+    }
+    & .base-btn {
+        justify-content: center;
+    }
+}
+
 .base-section {
     padding: 60px 0px;
     &__title {
@@ -713,6 +751,36 @@ img {
     }
 }
 
+.header-menu-btn_sm {
+    display: none !important;
+}
+
+.school-logo_sm {
+    display: none;
+    & span {
+        // DANGER CUT STRING
+        line-height: 1.0em;
+        height: 3em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.school-logo {
+    & span {
+        // DANGER CUT STRING
+        line-height: 1.0em;
+        height: 3em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
 
 
 @import 'header';
@@ -724,3 +792,4 @@ img {
 @import 'resource';
 @import 'usefull';
 @import 'footer';
+@import 'media';
