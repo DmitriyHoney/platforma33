@@ -115,6 +115,7 @@
     &-slider-arrows {
         top: 20% !important;
         padding: 0;
+        
         & .slider-arrow.next-slide {
             position: relative;
             right: -20px;
@@ -127,6 +128,7 @@
     &-anons-slider-arrows {
         padding: 0;
         top: 40% !important;
+        height: 0;
         & .slider-arrow.next-slide {
             position: relative;
             right: -20px;
@@ -229,7 +231,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        & .base-btn.base-btn__ghost {
+        & .base-btn {
             margin-top: auto;
         }
     }

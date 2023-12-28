@@ -42,8 +42,9 @@
     margin: 0 -6px;
     position: relative;
     &-arrows {
+        height: 1px;
         padding: 0;
-        top: 7% !important;
+        top: 25px !important;
         & .slider-arrow.next-slide {
             position: relative;
             right: -20px;

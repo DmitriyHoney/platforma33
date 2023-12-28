@@ -113,6 +113,20 @@
         margin-top: 24px;
     }
     .offer-title {
+        gap: 8px;
+    }
+    .offer-title span {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+    .offer-text_large {
+        font-size: 22px;
+    }
+    .offer-text_large {
+        margin-bottom: 0;
+    }
+    
+    .offer-title {
         font-size: 24px;
     }
     .offer {
@@ -432,5 +446,7 @@
 }
 
 @media screen and (max-width: 550px) {
-
+    .offer .offer-slide-base-bg {
+        width: 100% !important;
+    }
 }
