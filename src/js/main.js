@@ -62,18 +62,21 @@ $(document).ready(function(){
         nextArrow: $('.about-slider-arrows .next-slide'),
         infinite: true,
         slidesToShow: 3,
+        slidesToScroll: 3,
         variableWidth: true,
         responsive: [
             {
               breakpoint: 1200,
               settings: {
                 slidesToShow: 2,
+                slidesToScroll: 2,
               }
             },
             {
                 breakpoint: 729,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
                     variableWidth: false,
                 }
             },
@@ -220,8 +223,6 @@ $(document).ready(function(){
     });
 
     $('.header-nav__item a').on('click', function() {
-        // $('body').toggleClass('showCollapseMenu');
-        console.log($('.header-nav__item a[aria-expanded="true"]').length);
         if ($('.header-nav__item a[aria-expanded="true"]').length) {
             $('body').addClass('showCollapseMenu');
         } else $('body').removeClass('showCollapseMenu');

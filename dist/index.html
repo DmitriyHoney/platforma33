@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/lato.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/sm-core-css.css">
     <link rel="stylesheet" href="css/fancybox.css">
@@ -285,9 +286,9 @@
                         <img src="https://img.freepik.com/free-photo/wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=ais" alt="Логотип сайта">
                         <span>Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"</span>
                     </a>
-                    <a class="header-menu-btn header-menu-btn_sm" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                    <!-- <a class="header-menu-btn header-menu-btn_sm" data-bs-toggle="offcanvas" href="#offcanvasExample">
                         <img src="./img/common/menu.svg" alt="menu">
-                    </a>
+                    </a> -->
                     <div class="header-main__bottom-actions">
                         <a href="#">
                             <img src="./img/common/vk.svg" alt="Вконтакте">
@@ -376,7 +377,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-submain">
+        <div class="header-submain" id="accordion">
             <div class="container">
                 <img 
                     src="https://img.freepik.com/free-photo/wide-angle-shot-of-a-single-tree-growing-under-a-clouded-sky-during-a-sunset-surrounded-by-grass_181624-22807.jpg?size=626&amp;ext=jpg&amp;ga=GA1.1.386372595.1698105600&amp;semt=ais" 
@@ -428,132 +429,130 @@
                     </a> -->
                 </div>
             </div>
-            <span id="accordion">
-                <div class="base-collapse header-submain__collapse collapse" id="collapseExample" data-bs-parent="#accordion">
-                    <div class="container">
-                        <ul class="base-collapse__links reset_ul_ol">
-                            <li>
-                                <a href="#">
-                                    <img src="./img/common/file-check-02.svg" alt="icon">
-                                    <span>Подать заявление в школу</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./img/common/flag-05.svg" alt="icon">
-                                    <span>Информация об учреждениях</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./img/common/graduation-hat-02.svg" alt="icon">
-                                    <span>Электронный дневник</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./img/common/trophy-01.svg" alt="icon">
-                                    <span>Результаты ЕГЭ/ОГЭ</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./img/common/file-search-02.svg" alt="icon">
-                                    <span>Проверка статуса заявления</span>
-                                </a>
-                            </li>
+            <div class="base-collapse header-submain__collapse collapse" id="collapseExample" data-bs-parent="#accordion">
+                <div class="container">
+                    <ul class="base-collapse__links reset_ul_ol">
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/file-check-02.svg" alt="icon">
+                                <span>Подать заявление в школу</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/flag-05.svg" alt="icon">
+                                <span>Информация об учреждениях</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                                <span>Электронный дневник</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/trophy-01.svg" alt="icon">
+                                <span>Результаты ЕГЭ/ОГЭ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/file-search-02.svg" alt="icon">
+                                <span>Проверка статуса заявления</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="base-collapse__menu-wrap">
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Информация об организациях</a></li>
+                            <li><a href="#">Приём/перевод и отчисление учащихся</a></li>
+                            <li><a href="#">Внимание</a></li>
+                            <li><a href="#">Полезная информация</a></li>
                         </ul>
-                        <div class="base-collapse__menu-wrap">
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Объявления</a></li>
-                                <li><a href="#">Информация об организациях</a></li>
-                                <li><a href="#">Приём/перевод и отчисление учащихся</a></li>
-                                <li><a href="#">Внимание</a></li>
-                                <li><a href="#">Полезная информация</a></li>
-                            </ul>
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li>
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-                                            Школьное питание
-                                        <img src="./img/common/chevron-down.svg" alt="icon">
-                                        <img class="dropdown-toggle_icon-act" src="./img/common/chevron-down_grad.svg" alt="icon" style="transform: rotate(180deg);">
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                            <li><a href="#">Школьное питание</a></li>
-                                            <li><a href="#">Меню</a></li>
-                                            <li><a href="#">Организаторы</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">О школе</a></li>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Прочие документы</a></li>
-                            </ul>
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Платные образовательные услуги</a></li>
-                                <li><a href="#">Организация электронного и дистанционного обучения</a></li>
-                                <li><a href="#">Полезные материалы</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="base-collapse header-submain__collapse collapse" id="collapseExample2" data-bs-parent="#accordion">
-                    <div class="container">
-                        <div class="base-collapse__menu-wrap">
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Объявления</a></li>
-                                <li><a href="#">Аттестация</a></li>
-                                <li><a href="#">Прочие документы</a></li>
-                                <li><a href="#">Правила внутреннего трудового распорядка</a></li>
-                            </ul>
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Методические материалы</a></li>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Организация электронного и дистанционного обучения</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="base-collapse header-submain__collapse collapse" id="collapseExample3" data-bs-parent="#accordion">
-                    <div class="container">
-                        <ul class="base-collapse__links reset_ul_ol student-links">
+                        <ul class="base-collapse__nav reset_ul_ol">
                             <li>
-                                <a href="#">
-                                    <img src="./img/common/graduation-hat-02.svg" alt="icon">
-                                    <span>Вход в электронный дневник</span>
-                                </a>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Школьное питание
+                                    <img src="./img/common/chevron-down.svg" alt="icon">
+                                    <img class="dropdown-toggle_icon-act" src="./img/common/chevron-down_grad.svg" alt="icon" style="transform: rotate(180deg);">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a href="#">Школьное питание</a></li>
+                                        <li><a href="#">Меню</a></li>
+                                        <li><a href="#">Организаторы</a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#" class="student-links__bg-grad">
-                                    <img src="./img/common/trophy-01.svg" alt="icon">
-                                    <span>Олимпиады и <br> конкурсы</span>
-                                    <img src="./img/common/10. startup.svg" alt="startup" class="student-links__absolute-img">
-                                </a>
-                            </li>
+                            <li><a href="#">О школе</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Прочие документы</a></li>
                         </ul>
-                        <div class="base-collapse__menu-wrap">
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Объявления</a></li>
-                                <li><a href="#">Школьная жизнь</a></li>
-                                <li><a href="#">Расписание звонков</a></li>
-                                <li><a href="#">Расписание занятий</a></li>
-                            </ul>
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Государственная итоговая аттестация</a></li>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Олимпиады и конкурсы</a></li>
-                                <li><a href="#">Организация электронного и дистанционного обучения</a></li>
-                            </ul>
-                            <ul class="base-collapse__nav reset_ul_ol">
-                                <li><a href="#">Правила внутреннего распорядка обучающихся</a></li>
-                                <li><a href="#">Профориентация</a></li>
-                                <li><a href="#">Полезные материалы</a></li>
-                            </ul>
-                        </div>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Платные образовательные услуги</a></li>
+                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                            <li><a href="#">Полезные материалы</a></li>
+                        </ul>
                     </div>
                 </div>
-            </span>
+            </div>
+            <div class="base-collapse header-submain__collapse collapse" id="collapseExample2" data-bs-parent="#accordion">
+                <div class="container">
+                    <div class="base-collapse__menu-wrap">
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Аттестация</a></li>
+                            <li><a href="#">Прочие документы</a></li>
+                            <li><a href="#">Правила внутреннего трудового распорядка</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Методические материалы</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="base-collapse header-submain__collapse collapse" id="collapseExample3" data-bs-parent="#accordion">
+                <div class="container">
+                    <ul class="base-collapse__links reset_ul_ol student-links">
+                        <li>
+                            <a href="#">
+                                <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                                <span>Вход в электронный дневник</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="student-links__bg-grad">
+                                <img src="./img/common/trophy-01.svg" alt="icon">
+                                <span>Олимпиады и <br> конкурсы</span>
+                                <img src="./img/common/10. startup.svg" alt="startup" class="student-links__absolute-img">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="base-collapse__menu-wrap">
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Школьная жизнь</a></li>
+                            <li><a href="#">Расписание звонков</a></li>
+                            <li><a href="#">Расписание занятий</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Государственная итоговая аттестация</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Олимпиады и конкурсы</a></li>
+                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                        </ul>
+                        <ul class="base-collapse__nav reset_ul_ol">
+                            <li><a href="#">Правила внутреннего распорядка обучающихся</a></li>
+                            <li><a href="#">Профориентация</a></li>
+                            <li><a href="#">Полезные материалы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <section class="offer">
@@ -669,96 +668,96 @@
             </div>
     </section>
     <div class="header-sm">
-        <div class="container">
+        <div class="container" id="header-sm-accordion">
             <nav class="header-nav">
                 <ul class="reset_ul_ol header-nav__items">
                     <li class="header-nav__item">
-                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse" >
+                        <a href="#header-sm-collapse1" aria-expanded="false" data-bs-toggle="collapse">
                             <span>Родителям</span>
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse">
+                        <a href="#header-sm-collapse2" aria-expanded="false" data-bs-toggle="collapse">
                             <span>Сотрудникам</span>
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="collapse">
+                        <a href="#header-sm-collapse3" aria-expanded="false" data-bs-toggle="collapse">
                             <span>Обучающимся</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="base-collapse collapse header-submain__collapse" id="collapseExample" data-bs-parent="#accordion">
-                <div class="container">
-                    <ul class="base-collapse__links reset_ul_ol">
-                        <li>
-                            <a href="#">
-                                <img src="./img/common/file-check-02.svg" alt="icon">
-                                <span>Подать заявление в школу</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/common/flag-05.svg" alt="icon">
-                                <span>Информация об учреждениях</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/common/graduation-hat-02.svg" alt="icon">
-                                <span>Электронный дневник</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/common/trophy-01.svg" alt="icon">
-                                <span>Результаты ЕГЭ/ОГЭ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./img/common/file-search-02.svg" alt="icon">
-                                <span>Проверка статуса заявления</span>
-                            </a>
-                        </li>
+            <div class="base-collapse collapse header-submain__collapse" id="header-sm-collapse1" data-bs-parent="#header-sm-accordion">
+            <div class="container">
+                <ul class="base-collapse__links reset_ul_ol">
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/file-check-02.svg" alt="icon">
+                            <span>Подать заявление в школу</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/flag-05.svg" alt="icon">
+                            <span>Информация об учреждениях</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/graduation-hat-02.svg" alt="icon">
+                            <span>Электронный дневник</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/trophy-01.svg" alt="icon">
+                            <span>Результаты ЕГЭ/ОГЭ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/common/file-search-02.svg" alt="icon">
+                            <span>Проверка статуса заявления</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="base-collapse__menu-wrap">
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="#">Информация об организациях</a></li>
+                        <li><a href="#">Приём/перевод и отчисление учащихся</a></li>
+                        <li><a href="#">Внимание</a></li>
+                        <li><a href="#">Полезная информация</a></li>
                     </ul>
-                    <div class="base-collapse__menu-wrap">
-                        <ul class="base-collapse__nav reset_ul_ol">
-                            <li><a href="#">Объявления</a></li>
-                            <li><a href="#">Информация об организациях</a></li>
-                            <li><a href="#">Приём/перевод и отчисление учащихся</a></li>
-                            <li><a href="#">Внимание</a></li>
-                            <li><a href="#">Полезная информация</a></li>
-                        </ul>
-                        <ul class="base-collapse__nav reset_ul_ol">
-                            <li>
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-                                        Школьное питание
-                                    <img src="./img/common/chevron-down.svg" alt="icon">
-                                    <img class="dropdown-toggle_icon-act" src="./img/common/chevron-down_grad.svg" alt="icon" style="transform: rotate(180deg);">
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a href="#">Школьное питание</a></li>
-                                        <li><a href="#">Меню</a></li>
-                                        <li><a href="#">Организаторы</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">О школе</a></li>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">Прочие документы</a></li>
-                        </ul>
-                        <ul class="base-collapse__nav reset_ul_ol">
-                            <li><a href="#">Платные образовательные услуги</a></li>
-                            <li><a href="#">Организация электронного и дистанционного обучения</a></li>
-                            <li><a href="#">Полезные материалы</a></li>
-                        </ul>
-                    </div>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                    Школьное питание
+                                <img src="./img/common/chevron-down.svg" alt="icon">
+                                <img class="dropdown-toggle_icon-act" src="./img/common/chevron-down_grad.svg" alt="icon" style="transform: rotate(180deg);">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a href="#">Школьное питание</a></li>
+                                    <li><a href="#">Меню</a></li>
+                                    <li><a href="#">Организаторы</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">О школе</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Прочие документы</a></li>
+                    </ul>
+                    <ul class="base-collapse__nav reset_ul_ol">
+                        <li><a href="#">Платные образовательные услуги</a></li>
+                        <li><a href="#">Организация электронного и дистанционного обучения</a></li>
+                        <li><a href="#">Полезные материалы</a></li>
+                    </ul>
                 </div>
-                </div>
-                <div class="base-collapse collapse header-submain__collapse" id="collapseExample2" data-bs-parent="#accordion">
+            </div>
+            </div>
+            <div class="base-collapse collapse header-submain__collapse" id="header-sm-collapse2" data-bs-parent="#header-sm-accordion">
                 <div class="container">
                     <div class="base-collapse__menu-wrap">
                         <ul class="base-collapse__nav reset_ul_ol">
@@ -774,8 +773,8 @@
                         </ul>
                     </div>
                 </div>
-                </div>
-                <div class="base-collapse collapse header-submain__collapse" id="collapseExample3" data-bs-parent="#accordion">
+            </div>
+            <div class="base-collapse collapse header-submain__collapse" id="header-sm-collapse3" data-bs-parent="#header-sm-accordion">
                 <div class="container">
                     <ul class="base-collapse__links reset_ul_ol">
                         <li>
@@ -811,7 +810,7 @@
                         </ul>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
     <section class="services base-section">
@@ -945,72 +944,72 @@
                             <img src="./img/common/chevron-right_grad.svg" alt="chevron-right_grad.svg">
                         </a>
                         <div class="events-slider">
-                            <div class="events-slide">
-                                <div class="events-slide__image">
+                            <div class="events-slide" itemscope itemtype="http://schema.org/Event">
+                                <div class="events-slide__image" itemprop="image">
                                     <img src="./img/events/slide1.jpg" alt="slide1">
                                 </div>
-                                <span class="events-slide__date">30 декабря 2020</span>
-                                <h3 class="events-slide__title">
+                                <span class="events-slide__date" itemprop="startDate">30 декабря 2020</span>
+                                <h3 class="events-slide__title" itemprop="name">
                                     В Муроме состоялся инженерный квест “Строим будущее вместе”
                                 </h3>
                                 <a href="#" class="base-btn base-btn__secondary">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
-                            <div class="events-slide">
-                                <div class="events-slide__image">
+                            <div class="events-slide" itemscope itemtype="http://schema.org/Event">
+                                <div class="events-slide__image" itemprop="image">
                                     <img src="./img/events/slide2.jpg" alt="slide2">
                                 </div>
-                                <span class="events-slide__date">01 декабря 2020</span>
-                                <h3 class="events-slide__title">
+                                <span class="events-slide__date" itemprop="startDate">01 декабря 2020</span>
+                                <h3 class="events-slide__title" itemprop="name">
                                     В лагере “Олимп” стартовало обучение языку программирования Pythone для учителей информатики
                                 </h3>
                                 <a href="#" class="base-btn base-btn__secondary">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
-                            <div class="events-slide">
-                                <div class="events-slide__image">
+                            <div class="events-slide" itemscope itemtype="http://schema.org/Event">
+                                <div class="events-slide__image" itemprop="image">
                                     <img src="./img/events/slide3.jpg" alt="slide3">
                                 </div>
-                                <span class="events-slide__date">15 ноября 2020</span>
-                                <h3 class="events-slide__title">
+                                <span class="events-slide__date" itemprop="startDate">15 ноября 2020</span>
+                                <h3 class="events-slide__title"  itemprop="name">
                                     Министерства образования Нижегородской, Владимирской и Ивановской областей подписали соглашение
                                 </h3>
                                 <a href="#" class="base-btn base-btn__secondary">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
-                            <div class="events-slide">
-                                <div class="events-slide__image">
+                            <div class="events-slide" itemscope itemtype="http://schema.org/Event">
+                                <div class="events-slide__image" itemprop="image">
                                     <img src="./img/events/slide4.jpg" alt="slide4">
                                 </div>
-                                <span class="events-slide__date">12 ноября 2020</span>
-                                <h3 class="events-slide__title">
+                                <span class="events-slide__date" itemprop="startDate">12 ноября 2020</span>
+                                <h3 class="events-slide__title"  itemprop="name">
                                     Самые КЛАССные руководители региона собрались вместе!
                                 </h3>
                                 <a href="#" class="base-btn base-btn__secondary">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
-                            <div class="events-slide">
-                                <div class="events-slide__image">
+                            <div class="events-slide" itemscope itemtype="http://schema.org/Event">
+                                <div class="events-slide__image" itemprop="image">
                                     <img src="./img/events/slide3.jpg" alt="slide3">
                                 </div>
-                                <span class="events-slide__date">15 ноября 2020</span>
-                                <h3 class="events-slide__title">
+                                <span class="events-slide__date" itemprop="startDate">15 ноября 2020</span>
+                                <h3 class="events-slide__title" itemprop="name">
                                     Министерства образования Нижегородской, Владимирской и Ивановской областей подписали соглашение
                                 </h3>
                                 <a href="#" class="base-btn base-btn__secondary">
                                     <span>Подробнее</span>
                                 </a>
                             </div>
-                            <div class="events-slide">
-                                <div class="events-slide__image">
+                            <div class="events-slide" itemscope itemtype="http://schema.org/Event">
+                                <div class="events-slide__image" itemprop="image">
                                     <img src="./img/events/slide4.jpg" alt="slide4">
                                 </div>
-                                <span class="events-slide__date">12 ноября 2020</span>
-                                <h3 class="events-slide__title">
+                                <span class="events-slide__date" itemprop="startDate">12 ноября 2020</span>
+                                <h3 class="events-slide__title" itemprop="name">
                                     Самые КЛАССные руководители региона собрались вместе!
                                 </h3>
                                 <a href="#" class="base-btn base-btn__secondary">
@@ -1033,17 +1032,17 @@
                             <img src="./img/common/chevron-right_grad.svg" alt="chevron-right_grad.svg">
                         </a>
                         <div class="events-anons-slider">
-                            <div class="events-anons-slide">
+                            <div class="events-anons-slide" itemscope itemtype="http://schema.org/Event">
                                 <div class="events-anons-slide__content">
-                                    <h2 class="events-anons-slide__title">
+                                    <h2 class="events-anons-slide__title" itemprop="name">
                                         Муниципальное общеобразовательное учреждение
                                     </h2>
                                     <ul class="reset_ul_ol events-anons-slide__info">
-                                        <li>
+                                        <li itemprop="startDate">
                                             <span>Начало:</span>
                                             <span>29 сентября 2023</span>
                                         </li>
-                                        <li>
+                                        <li itemprop="endDate">
                                             <span>Завершение:</span>
                                             <span>29 сентября 2023</span>
                                         </li>
@@ -1056,17 +1055,17 @@
                                     <img src="./img/events/anounce1.jpg" alt="anons1">
                                 </div>
                             </div>
-                            <div class="events-anons-slide">
+                            <div class="events-anons-slide" itemscope itemtype="http://schema.org/Event">
                                 <div class="events-anons-slide__content">
-                                    <h2 class="events-anons-slide__title">
+                                    <h2 class="events-anons-slide__title"  itemprop="name">
                                         Муниципальное общеобразовательное учреждение
                                     </h2>
                                     <ul class="reset_ul_ol events-anons-slide__info">
-                                        <li>
+                                        <li itemprop="startDate">
                                             <span>Начало:</span>
                                             <span>29 сентября 2023</span>
                                         </li>
-                                        <li>
+                                        <li itemprop="endDate">
                                             <span>Завершение:</span>
                                             <span>29 сентября 2023</span>
                                         </li>
@@ -1079,17 +1078,17 @@
                                     <img src="./img/events/anounce1.jpg" alt="anons1">
                                 </div>
                             </div>
-                            <div class="events-anons-slide">
+                            <div class="events-anons-slide" itemscope itemtype="http://schema.org/Event">
                                 <div class="events-anons-slide__content">
-                                    <h2 class="events-anons-slide__title">
+                                    <h2 class="events-anons-slide__title"  itemprop="name">
                                         Муниципальное общеобразовательное учреждение
                                     </h2>
                                     <ul class="reset_ul_ol events-anons-slide__info">
-                                        <li>
+                                        <li itemprop="startDate">
                                             <span>Начало:</span>
                                             <span>29 сентября 2023</span>
                                         </li>
-                                        <li>
+                                        <li itemprop="endDate">
                                             <span>Завершение:</span>
                                             <span>29 сентября 2023</span>
                                         </li>
@@ -1131,12 +1130,12 @@
             <h2 class="base-section__title">
                 О школе
             </h2>
-            <div class="row gx-4">
+            <div class="row gx-4" itemscope itemtype="http://schema.org/Organization">
                 <div class="col-xl-6 col-lg-12">
-                    <p class="about-subtitle">
+                    <p class="about-subtitle" itemprop="name">
                         Муниципальное бюджетное общеобразовательное учреждение города Коврова "Средняя общеобразовательная школа №23 имени Героя Советского Союза Дмитрия Фёдоровича Устинова"
                     </p>
-                    <div class="about-text">
+                    <div class="about-text" itemprop="description">
                         Строительство школы по ул. Комсомольская — Лакина было начато в феврале 1989 года. В строительство этого комплекса входило: здание четырехэтажной школы на 1120 мест, пристроенный бассейн, отдельно стоящий тир и теплица. В июле 1992 года объект был введен в эксплуатацию. 1 сентября 1992 года новая школа распахнула двери для девчонок и мальчишек города.
                         Первым директором школы стала Москвина Нина Александровна, талантливый педагог и организатор. Именно на ее хрупкие плечи легли все тяготы строительства и оснащения школы в условиях нехватки средств и повального дефицита. Среди тех, кто по-настоящему был заинтересован в создании новой школы — Петр Алексеевич Кауров, глава местного самоуправления города с 1991 по 2000 гг.
                         Особенностью новой школы стали гимназические классы. Из воспоминаний Нины Александровны: «Трудно сказать, кому первому пришла идея о создании гимназии. Школа была нужна не только микрорайону, но и всему городу. На тот момент было много спорных вопросов и проблем, которые мы обсуждали с начальником управления образования Валентиной Ивановной Клещевниковой. В итоге, совместно пришли к тому, что это будет не просто школа с общеобразовательными, но и с гимназическими классами.» Так в школьном расписании появились такие предметы, как второй иностранный язык, риторика, этика, хореография. Школа № 6 — одно из самых молодых учебных заведений округа Муром. 1 сентября 2015 года она отметила очередной день рождения, 23 года со дня основания, в новом статусе. С этого дня школа стала гимназией.
@@ -1144,7 +1143,7 @@
                     <a href="#" class="base-link base-link_primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Читать полностью...</a>
                 </div>
                 <div class="col-xl-6 col-lg-12">
-                    <div class="about-media">
+                    <div class="about-media" itemprop="image">
                         <img src="./img/about/Rectangle 737.jpg" alt="image">
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-
+/*NEW STYLE*/
 .base-btn {
     cursor: pointer;
     padding: 16px 32px;
@@ -1955,7 +1955,7 @@
 }
 
 ul#main-menu::after {
-    height: 130px;
+    height: 230px;
 }
 
 .base-collapse {
@@ -1989,3 +1989,30 @@ ul#main-menu::after {
     height: 164px !important;
     width: 164px !important;
 }
+
+.useful-card h4 {
+    line-height: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider-arrows {
+        width: 95%;
+    }
+    .offer {
+        padding: 30px 0;
+    }
+    .offer .offer-slide-first-bg {
+        display: none;
+    }
+    .offer-slide {
+        height: auto;
+    }
+    .base-dropdown__lk .base-dropdown__wrap {
+        padding: 16px;
+    }
+}
+
+.school-logo span {
+    font-weight: 600;
+}
+/*NEW STYLE*/

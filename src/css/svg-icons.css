@@ -56,3 +56,9 @@
     -webkit-mask-image: url(../img/common/eye-cl.svg);
 }
 
+.svg-icon__svg-arrow-close {
+    mask-image: url(../img/common/x-close.svg);
+    -webkit-mask-image: url(../img/common/x-close.svg);
+}
+
+
